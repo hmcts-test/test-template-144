@@ -1,0 +1,6 @@
+java:
+  applicationPort: 8080
+  image: 'hmctspublic.azurecr.io/hmcts-test/test-template-143/test:latest'
+  ingressHost: hmcts-test/test-template-143-test-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
+  aadIdentityName: hmcts-test/test-template-143
+  environment:
